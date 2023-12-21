@@ -1,0 +1,10 @@
+{
+  "binary": "memcached_trimmer",
+  "native_libs": ["-lpthread", "-levent"],
+  "name": "memcached",
+  "args": [""],
+  "modules": [],
+  "ldflags": [""],
+  "main": "memcached.bc",
+  "config_files": []
+}

@@ -1,0 +1,9 @@
+server.document-root = "{{workdir}}/serve"
+
+server.port = 3001
+
+mimetype.assign = (
+  ".html" => "text/html",
+  ".php" => "application/x-httpd-php"
+)
+static-file.exclude-extensions = ( ".php" )

@@ -1,0 +1,10 @@
+{
+  "binary": "objdump_occam",
+  "native_libs": ["-ldl"],
+  "name": "objdump",
+  "static_args": ["-x"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "objdump.bc",
+  "dynamic_args": "1"
+}

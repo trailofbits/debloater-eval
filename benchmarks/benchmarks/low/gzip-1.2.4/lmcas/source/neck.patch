@@ -1,0 +1,35 @@
+--- gzip.c.orig	2023-05-09 13:29:32.825927967 -0400
++++ gzip.c	2023-05-09 13:56:25.175283836 -0400
+@@ -303,6 +303,9 @@
+     { 0, 0, 0, 0 }
+ };
+ 
++static bool neck_placed = false;
++__attribute__((noinline)) void _lmcas_neck(void) {}
++
+ /* local functions */
+ 
+ local noreturn void try_help (void);
+@@ -616,6 +619,11 @@
+         }
+     } /* loop on all arguments */
+ 
++    if (!neck_placed) {
++      _lmcas_neck();
++      neck_placed = true;
++    }
++
+     /* By default, save name and timestamp on compression but do not
+      * restore them on decompression.
+      */
+@@ -2069,6 +2077,10 @@
+ local void do_exit(exitcode)
+     int exitcode;
+ {
++    if (!neck_placed) {
++      _lmcas_neck();
++      neck_placed = true;
++    }
+     static int in_exit = 0;
+ 
+     if (in_exit) exit(exitcode);

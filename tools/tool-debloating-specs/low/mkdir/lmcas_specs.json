@@ -1,0 +1,27 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "mkdir",
+        "-p"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/",
+      "syscall_mocks": {
+        "sys_getuid": {
+          "uid": 1000
+        },
+        "sys_getgid": {
+          "gid": 1000
+        },
+        "sys_geteuid": {
+          "euid": 1000
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "binary": "lighttpd_occam",
+  "native_libs": ["-ldl", "-lpcre2-8", "-lpthread"],
+  "name": "lighttpd",
+  "static_args": ["-D",  "-f"],
+  "dynamic_args": "1",
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "lighttpd.bc"
+}

@@ -1,0 +1,25 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "gzip",
+        "-c",
+        "-f"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/",
+      "syscall_mocks": {
+        "sys_rt_sigaction": {
+          "replace_sighup" : false
+        },
+        "sys_ioctl": {
+          "unsafe_allow_tiocgwinsz": true
+        }
+      }
+    }
+  ]
+}

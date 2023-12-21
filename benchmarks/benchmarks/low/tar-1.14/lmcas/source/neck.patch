@@ -1,0 +1,28 @@
+--- tar.c.orig	2023-05-09 12:08:39.560200336 -0400
++++ tar.c	2023-05-09 12:15:04.523537386 -0400
+@@ -67,6 +67,8 @@
+ # define DEFAULT_BLOCKING 20
+ #endif
+ 
++__attribute__((noinline)) void _lmcas_neck(void) {}
++
+ /* Print a message if not all links are dumped */
+ static int check_links_option;
+ 
+@@ -2148,6 +2150,7 @@
+ {
+   argp_help (&argp, stderr, ARGP_HELP_SEE, (char*) program_name);
+   close_stdout ();
++  _lmcas_neck();
+   exit (status);
+ }
+ 
+@@ -2774,6 +2777,8 @@
+ 
+   decode_options (argc, argv);
+ 
++  _lmcas_neck();
++
+   name_init ();
+ 
+   /* Main command execution.  */

@@ -1,0 +1,24 @@
+{
+    "binary": "{BINARY_PATH}",
+    "configs": [
+      {
+        "args": [
+          "bftpd",
+          "-D",
+          "-c",
+          "{INPUT_FILES_PATH}/bftpd-disabled-cmds-anon.conf"
+        ],
+        "env": {
+          "CWD": "/",
+          "PATH": "/bin"
+        },
+        "cwd": "/",
+        "syscall_mocks": {
+          "sys_rt_sigaction": {
+            "replace_sighup": true
+          }
+        }
+      }
+    ]
+  }
+  

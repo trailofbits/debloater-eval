@@ -1,0 +1,10 @@
+{
+  "binary": "nmap_trimmer",
+  "native_libs": ["-lpcap", "-lssl", "-lcrypto", "-ldl", "-lpthread", "-lz", "-lpcre"],
+  "name": "nmap",
+  "args": ["-sT", "-p1-7080,8080", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "nmap.bc",
+  "config_files": []
+}

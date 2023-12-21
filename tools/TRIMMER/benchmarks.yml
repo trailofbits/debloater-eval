@@ -1,0 +1,152 @@
+high/imagemagick-7.0.1-0:
+  id: imagemagick
+  debloated-binary-name: magick_trimmer
+  binary-name: magick
+  complexity: high
+  libs:
+    libMagickCore-7.Q16HDRI.so.0.0.0: libMagickCore-7.Q16HDRI.so.0
+    libMagickWand-7.Q16HDRI.so.0.0.0: libMagickWand-7.Q16HDRI.so.0
+  packages:
+    - libtiff-dev
+    - libpng-dev
+    - libfontconfig-dev
+
+high/nginx-1.23.3:
+  id: nginx
+  debloated-binary-name: nginx_trimmer
+  binary-name: nginx
+  complexity: high
+  packages:
+    - libpcre2-dev
+    - wget  # client for performance test
+
+high/nmap-7.93:
+  id: nmap
+  debloated-binary-name: nmap_trimmer
+  binary-name: nmap
+  complexity: high
+
+high/poppler-0.60:
+  id: poppler
+  perf-test-script: benchmark_aggressive_pdftohtml.sh
+  debloated-binary-name: pdftohtml_trimmer
+  binary-name: pdftohtml
+  complexity: high
+  libs:
+    libpoppler.so.70.0.0: libpoppler.so.70
+  packages:
+    - libnss3
+    - libopenjpeg-dev
+    - libtiff-dev
+    - libpng-dev
+    - libfontconfig-dev
+    - libjpeg-dev
+
+medium/bftpd-6.1:
+  id: bftpd 
+  debloated-binary-name: bftpd_trimmer
+  binary-name: bftpd
+  complexity: medium
+  packages:
+    - lftp
+
+medium/lighttpd-1.4:
+  id: lighttpd 
+  debloated-binary-name: lighttpd_trimmer
+  binary-name: lighttpd
+  complexity: medium
+  packages:
+    - libpcre2-dev
+    - wget  # client for performance test
+
+medium/make-4.2:
+  id: make 
+  debloated-binary-name: make_trimmer
+  binary-name: make
+  complexity: medium
+
+medium/memcached-1.6.18:
+  id: memcached 
+  debloated-binary-name: memcached_trimmer
+  binary-name: memcached
+  complexity: medium
+  perf-test-run-as-root: False
+  packages:
+    - python3-pip
+  pip-modules:
+    - python-memcached
+
+medium/binutils-2.40:
+  id: objdump 
+  debloated-binary-name: objdump_trimmer
+  binary-name: objdump
+  complexity: medium
+
+medium/wget-1.20.3:
+  id: wget 
+  debloated-binary-name: wget_trimmer
+  binary-name: wget
+  complexity: medium
+  packages:
+    - gnutls-dev
+    - libpcre2-dev
+
+low/bzip2-1.0.5:
+  id: bzip2 
+  debloated-binary-name: bzip2_trimmer
+  binary-name: bzip2
+  complexity: low
+
+low/chown-8.2:
+  id: chown 
+  debloated-binary-name: chown_trimmer
+  binary-name: chown
+  complexity: low
+
+low/date-8.21:
+  id: date 
+  debloated-binary-name: date_trimmer
+  binary-name: date
+  complexity: low
+
+low/grep-2.19:
+  id: grep 
+  debloated-binary-name: grep_trimmer
+  binary-name: grep
+  complexity: low
+
+low/gzip-1.2.4:
+  id: gzip 
+  debloated-binary-name: gzip_trimmer
+  binary-name: gzip
+  complexity: low
+
+low/mkdir-5.2.1:
+  id: mkdir 
+  debloated-binary-name: mkdir_trimmer
+  binary-name: mkdir
+  complexity: low
+
+low/rm-8.4:
+  id: rm 
+  debloated-binary-name: rm_trimmer
+  binary-name: rm
+  complexity: low
+
+low/sort-8.16:
+  id: sort 
+  debloated-binary-name: sort_trimmer
+  binary-name: sort
+  complexity: low
+
+low/tar-1.14:
+  id: tar 
+  debloated-binary-name: tar_trimmer
+  binary-name: tar
+  complexity: low
+
+low/uniq-8.16:
+  id: uniq 
+  debloated-binary-name: uniq_trimmer
+  binary-name: uniq
+  complexity: low

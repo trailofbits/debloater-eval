@@ -1,0 +1,59 @@
+assets:
+- '*'
+build:
+  args:
+  - -O3
+  - -fPIC
+  - -fPIE
+  - -pie
+  - bzip2.c
+  - blocksort.c
+  - huffman.c
+  - crctable.c
+  - randtable.c
+  - compress.c
+  - decompress.c
+  - bzlib.c
+  - -o
+  - bzip2
+  command: clang
+env: {}
+oracle:
+  command: oracle.sh
+sanitized_build:
+  args:
+  - -O3
+  - -fPIC
+  - -fPIE
+  - -fsanitize=address
+  - -fsanitize=pointer-compare
+  - -fsanitize=pointer-subtract
+  - -fno-sanitize-recover=undefined
+  - -fstack-protector-strong
+  - -Wfatal-errors
+  - -Werror=return-type
+  - -Werror=uninitialized
+  - -Werror=maybe-uninitialized
+  - -Werror=return-type
+  - -Werror=implicit-int
+  - -Werror=implicit-function-declaration
+  - -pie
+  - -fsanitize=address
+  - -fsanitize=pointer-compare
+  - -fsanitize=pointer-subtract
+  - -fno-sanitize-recover=undefined
+  - -fstack-protector-strong
+  - bzip2.c
+  - blocksort.c
+  - huffman.c
+  - crctable.c
+  - randtable.c
+  - compress.c
+  - decompress.c
+  - bzlib.c
+  - -o
+  - bzip2
+  command: clang
+sources:
+- '**/*.c'
+- '**/*.h'

@@ -1,0 +1,10 @@
+{
+ "binary": "date_occam",
+ "native_libs": [],
+ "name": "date",
+ "static_args": ["-d"],
+ "modules": [],
+ "ldflags": ["-O3"],
+ "main": "date.bc",
+ "dynamic_args": "2"
+} 

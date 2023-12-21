@@ -1,0 +1,2 @@
+inputs/tar/10mb_1.bin filter=lfs diff=lfs merge=lfs -text
+inputs/tar/10mb_2.bin filter=lfs diff=lfs merge=lfs -text

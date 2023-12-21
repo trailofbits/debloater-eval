@@ -1,0 +1,206 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-c"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-u"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-i"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "5"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "10"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-w"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "10"
+        }
+      ],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [],
+      "stdin": "uniq-data",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/uniq-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

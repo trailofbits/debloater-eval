@@ -1,0 +1,31 @@
+assets:
+- '*'
+build:
+  command: make
+env:
+  CC: 'clang -O3 -fPIC -fPIE -pie -Wno-unused-command-line-argument '
+  CXX: 'clang++ -O3 -fPIC -fPIE -pie -Wno-unused-command-line-argument '
+oracle:
+  command: runuser -u memcached -- /bin/bash -c "source /chisel_env/bin/activate &&
+    python3 /host/tool-debloating-specs/chisel_oracle.py  --port_start 25000 --processes
+    8 ./memcached medium.memcached.oracle_memcached"
+sanitized_build:
+  command: make
+  env:
+    CC: 'clang -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wno-unused-command-line-argument '
+    CXX: 'clang++ -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wno-unused-command-line-argument '
+sources:
+- '**/*.c'
+- '**/*.h'

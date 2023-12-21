@@ -1,0 +1,10 @@
+{
+  "binary": "magick_trimmer",
+  "native_libs": ["/usr/lib/x86_64-linux-gnu/libMagickCore-7.Q16HDRI.so.0", "/usr/lib/x86_64-linux-gnu/libMagickWand-7.Q16HDRI.so.0", "-lpthread", "-ljbig", "-lfreetype", "-ltiff", "-ljpeg", "-lpng12", "-lfontconfig", "-llzma", "-lbz2", "-lgomp", "-ldl", "-lexpat", "-lz"],
+  "name": "magick",
+  "args": ["_",  "-flip", "_"],
+  "modules": ["libMagickCore-7.Q16HDRI.so.0.0.0.bc", "libMagickWand-7.Q16HDRI.so.0.0.0.bc"],
+  "ldflags": [""],
+  "main": "magick.bc",
+  "config_files": []
+}

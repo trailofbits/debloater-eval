@@ -1,0 +1,328 @@
+.configure-build: &configure-build
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+.configure-build-coreutils: &configure-build-coreutils
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  source-cmd:
+    - tar --strip-components=1 -xvf ../../../chown-8.2/lmcas/source/coreutils-8.26.tar.xz
+  pre-build:
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+.configure-build-touch-automake-files: &configure-build-touch-automake-files
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - touch aclocal.m4 Makefile.am configure Makefile.in
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+.configure-build-install: &configure-build-install
+  pre-build:
+    - ./configure --prefix=/usr/local
+  build:
+    - make -j{NPROC} -l{NPROC}
+  install:
+    - make install
+
+pcre2:
+  tarball: pcre2-10.42.tar.gz
+  source-cmd:
+    - tar --strip-components=1 -zxvf pcre2-10.42.tar.gz
+  <<: *configure-build-install
+
+zlib:
+  tarball: zlib-1.2.13.tar.gz
+  source-cmd:
+    - tar --strip-components=1 -zxvf zlib-1.2.13.tar.gz
+  <<: *configure-build-install
+
+libevent:
+  tarball: libevent-2.1.12-stable.tar.gz
+  source-cmd:
+    - tar --strip-components=1 -zxvf libevent-2.1.12-stable.tar.gz
+  pre-build:
+    - ./configure --prefix=/usr/local --disable-openssl
+  build:
+    - make -j{NPROC} -l{NPROC}
+  install:
+    - make install
+
+libpcap:
+  tarball: libpcap-1.10.4.tar.gz
+  source-cmd:
+    - tar --strip-components=1 -zxvf libpcap-1.10.4.tar.gz
+  pre-build:
+    - ./configure --prefix=/usr/local
+  build:
+    - make -j{NPROC} -l{NPROC}
+  install:
+    - make install
+
+high/imagemagick-7.0.1-0:
+  source-dir: source/ImageMagick
+  binaries:
+    - utilities/.libs/magick
+    - MagickCore/.libs/libMagickCore-7.Q16HDRI.so.10.0.0
+    - MagickWand/.libs/libMagickWand-7.Q16HDRI.so.10.0.0
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+  install:
+    - make install
+    - ldconfig /usr/local/lib
+
+high/nginx-1.23.3:
+  source-dir: source/nginx
+  package-tarball-dir: ../../medium/lighttpd-1.4/lmcas/packages
+  packages:
+    - pcre2
+  binaries:
+    - objs/nginx
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+    CLIENT: ../benchmarks/medium/wget-1.20.3/lmcas/wget
+  pre-build:
+    - './auto/configure --without-http_gzip_module'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+high/nmap-7.93:
+  source-dir: source/nmap
+  binaries:
+    - nmap
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    CXX: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+high/poppler-0.60:
+  source-dir: source/poppler
+  binaries:
+    - utils/pdftohtml
+    - utils/pdfattach
+    - utils/pdfdetach
+    - utils/pdffonts
+    - utils/pdfimages
+    - utils/pdfinfo
+    - utils/pdfseparate
+    - utils/pdftoppm
+    - utils/pdftops
+    - utils/pdftotext
+    - utils/pdfunite
+    - libpoppler.so.126.0.0
+  env: {}
+  pre-build:
+    - 'cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS}" -DCMAKE_CXX_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS}" -DCMAKE_CXX_COMPILER=musl-gclang -DCMAKE_C_COMPILER=musl-gclang'
+  build:
+    - 'make'
+  install:
+    - make install
+
+medium/make-4.2:
+  source-dir: lmcas/source
+  source-cmd:
+    - tar --strip-components=1 -xvf make-4.2.tar.gz
+  binaries:
+    - make
+  <<: *configure-build
+
+medium/wget-1.20.3:
+  source-dir: lmcas/source
+  source-cmd:
+    - tar --strip-components=1 -xvf wget-1.20.3.tar.gz
+  binaries:
+    - src/wget
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - ./configure --without-ssl
+  build:
+    - make -j{NPROC} -l{NPROC}
+
+medium/bftpd-6.1:
+  source-dir: source/original
+  binaries:
+    - bftpd
+  <<: *configure-build
+
+medium/binutils-2.40: 
+  source-dir: lmcas/source
+  source-cmd:
+    - tar --strip-components=1 -xvf binutils-2.40.tar.xz
+  binaries:
+    - binutils/objdump
+  specs-dir: medium/objdump
+  debloated-binary-dir: medium/objdump
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LD: 'ld' 
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - './configure --disable-gprofng'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+medium/lighttpd-1.4:
+  source-dir: lmcas/source
+  package-tarball-dir: lmcas/packages
+  packages:
+    - pcre2
+    - zlib
+  source-cmd:
+    - tar --strip-components=1 -Jxvf lighttpd-1.4.68.tar.xz
+  binaries:
+    - src/lighttpd
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+medium/memcached-1.6.18:
+  source-dir: lmcas/source
+  package-tarball-dir: lmcas/packages
+  packages:
+    - libevent
+  source-cmd:
+    - tar --strip-components=1 -zxvf memcached-1.6.18.tar.gz
+  binaries:
+    - ./memcached
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - ./configure
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+low/bzip2-1.0.5:
+  source-dir: source/original
+  env: {}
+  binaries:
+    - bzip2
+  pre-build: []
+  build:
+    - musl-gclang {COMPILE_FLAGS} {LINK_FLAGS} bzip2.c blocksort.c huffman.c crctable.c randtable.c compress.c decompress.c bzlib.c -o bzip2
+
+low/chown-8.2:
+  source-dir: lmcas/source
+  binaries:
+    - src/chown
+  pre-perf-test:
+    - cp -L /etc/passwd /tmp/
+    - rm /etc/passwd
+    - mv /tmp/passwd /etc/
+    - cp -L /etc/group /tmp/
+    - rm /etc/group
+    - mv /tmp/group /etc/
+    - cp -L /etc/gshadow /tmp/
+    - rm /etc/gshadow
+    - mv /tmp/gshadow /etc/
+    - cp -L /etc/shadow /tmp/
+    - rm /etc/shadow
+    - mv /tmp/shadow /etc/
+  <<: *configure-build-coreutils
+
+low/date-8.21:
+  source-dir: lmcas/source
+  binaries:
+    - src/date
+  <<: *configure-build-coreutils
+
+low/grep-2.19:
+  source-dir: source/original
+  binaries:
+    - src/grep
+  env:
+    CC: "musl-gclang {COMPILE_FLAGS} {LINK_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS}"
+  pre-build:
+    - autoreconf
+    - './configure'
+  build:
+    - 'make -j{NPROC} -l{NPROC}'
+
+low/gzip-1.2.4:
+  source-dir: lmcas/source
+  source-cmd: 
+    - tar --strip-components=1 -xvf gzip-1.12.tar.xz
+  patch-cmd:
+    - patch gzip.c -i neck.patch
+  binaries:
+    - gzip
+  <<: *configure-build
+
+low/mkdir-5.2.1:
+  source-dir: lmcas/source
+  patch-cmd:
+    - patch src/mkdir.c -i neck.patch
+  binaries:
+    - src/mkdir
+  <<: *configure-build-coreutils
+
+low/rm-8.4:
+  source-dir: lmcas/source
+  binaries:
+    - src/rm
+  <<: *configure-build-coreutils
+
+low/sort-8.16:
+  source-dir: lmcas/source
+  patch-cmd:
+    - patch src/sort.c -i neck.patch
+  binaries:
+    - src/sort
+  <<: *configure-build-coreutils
+
+low/tar-1.14:
+  source-dir: lmcas/source
+  source-cmd:
+    - tar --strip-components=1 -xvf tar-1.34.tar.xz
+  patch-cmd:
+    - patch src/tar.c -i neck.patch
+  binaries:
+    - src/tar
+  <<: *configure-build-touch-automake-files
+
+low/uniq-8.16:
+  source-dir: lmcas/source
+  patch-cmd:
+    - patch src/uniq.c -i neck.patch
+  binaries:
+    - src/uniq
+  <<: *configure-build-coreutils

@@ -1,0 +1,16 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "magick",
+        "-flip"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/"
+    }
+  ]
+}

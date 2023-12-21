@@ -1,0 +1,50 @@
+assets:
+- '*'
+build:
+  command: make
+env:
+  CC: clang
+  CFLAGS: '-O3 -fPIC -fPIE -pie '
+  CXX: clang++
+  CXXFLAGS: '-O3 -fPIC -fPIE -pie '
+oracle:
+  command: oracle.sh
+prepare:
+  command: ./configure
+#sanitized_build:
+#  command: make
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#sanitized_prepare:
+#  command: ./configure
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+sources:
+- '**/*.c'
+- '**/*.h'

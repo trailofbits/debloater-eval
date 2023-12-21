@@ -1,0 +1,339 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file_does_not_exist"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "file_does_not_exist"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-single_target.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-custom_default_target.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-single_target.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "file2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-multi_targets.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file3"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-deps.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file3"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-deps.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [
+        "make file3",
+        "cp file3 file3-original",
+        "echo more >> file3-original",
+        "echo more >> deps",
+        "cp deps deps-original",
+        "echo asdf >> file3",
+        "touch -t 2301010000 file3"
+      ],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file3"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-deps.mak",
+          "destination": "Makefile",
+          "permissions": true
+        }
+      ],
+      "setup": [
+        "make file3",
+        "echo asdf >> file3",
+        "cp file3 file3-expect"
+      ],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "all"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/med-phony.mak",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "file4"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/high-includes.mak",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "install"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/high-vars.mak",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "low-single_target.mak"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "file1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-single_target.mak",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "file1"
+        }
+      ],
+      "stdin": "./low-single_target.mak",
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/low-single_target.mak",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

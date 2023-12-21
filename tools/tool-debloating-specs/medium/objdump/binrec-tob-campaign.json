@@ -1,0 +1,1288 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-p"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-h"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-S"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-g"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-e"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-G"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-t"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-T"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-R"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libpthread.a"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libpthread.a",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-p"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-h"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-S"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-g"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-e"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-G"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-t"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-T"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-R"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./libc-2.28.so"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/libc-2.28.so",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2-17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-p"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-h"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-S"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-g"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-e"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-G"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-t"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-T"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-R"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./x86_64-linux-gnu-gcc-8"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/x86_64-linux-gnu-gcc-8",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3-17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./not-here.exe"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4-1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "/etc/passwd"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4-2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "/etc/"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4-3"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

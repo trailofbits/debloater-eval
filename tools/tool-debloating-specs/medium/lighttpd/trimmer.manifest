@@ -1,0 +1,10 @@
+{
+  "binary": "lighttpd_trimmer",
+  "native_libs": ["-ldl", "-lpthread", "-lpcre2-8"],
+  "name": "lighttpd",
+  "args": ["-D",  "-f",  "lighttpd-static-all.conf"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "lighttpd.bc",
+  "config_files": ["lighttpd-static-all.conf"]
+}

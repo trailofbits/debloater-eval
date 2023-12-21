@@ -1,0 +1,757 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/openpdf.zip",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [
+        "unzip openpdf.zip"
+      ],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "markdown.pdf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/markdown.pdf",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "BinRec.pdf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/BinRec.pdf",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-l"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "markdown.pdf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/markdown.pdf",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "markdown.pdf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/markdown.pdf",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-stdout"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "markdown.pdf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/markdown.pdf",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-129-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-129-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-129-2.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-129-3.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-129-4.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-156-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-156-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-179-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-179-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-179-2.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-216-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr18"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-216-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr19"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-216-2.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr20"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-254-0.zip-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr21"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-254-0.zip-2.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr22"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr23"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr24"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-2.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr25"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-3.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr24"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-4.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr25"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-296-5.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr26"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-333-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr27"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-65-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr28"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-73-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr29"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-86-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr30"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-86-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr31"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-9-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr32"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-LINK-158-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr33"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-LINK-320-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr34"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-LINK-320-1.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr35"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "OPENPDF-LINK-86-0.pdf"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "output.html"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr36"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

@@ -1,0 +1,10 @@
+{
+  "binary": "bftpd_occam",
+  "native_libs": ["-lcrypt"],
+  "name": "bftpd",
+  "static_args": ["-D",  "-c"],
+  "dynamic_args": "1",
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "bftpd.bc"
+}

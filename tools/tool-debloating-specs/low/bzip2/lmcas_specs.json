@@ -1,0 +1,17 @@
+{
+    "binary": "{BINARY_PATH}",
+    "configs": [
+      {
+        "args": [
+          "bzip2",
+          "-c",
+          "-f"
+        ],
+        "env": {
+          "CWD": "/",
+          "PATH": "/bin"
+        },
+        "cwd": "/"
+      }
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "nginx",
+        "-p",
+        "-c"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/"
+    }
+  ]
+}

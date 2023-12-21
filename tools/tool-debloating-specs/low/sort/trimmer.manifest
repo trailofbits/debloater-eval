@@ -1,0 +1,10 @@
+{
+  "binary": "sort_trimmer",
+  "native_libs": ["-lpthread"],
+  "name": "sort",
+  "args": ["-u", "-z", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "sort.bc",
+  "config_files": []
+}

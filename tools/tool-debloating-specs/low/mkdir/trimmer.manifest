@@ -1,0 +1,10 @@
+{
+  "binary": "mkdir_trimmer",
+  "native_libs": [],
+  "name": "mkdir",
+  "args": ["-p", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "mkdir.bc",
+  "config_files": []
+}

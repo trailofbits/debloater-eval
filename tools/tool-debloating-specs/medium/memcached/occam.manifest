@@ -1,0 +1,9 @@
+{
+  "binary": "memcached_occam",
+  "native_libs": ["-lpthread", "-levent"],
+  "name": "memcached",
+  "static_args": [""],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "memcached.bc"
+}

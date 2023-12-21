@@ -1,0 +1,10 @@
+{
+  "binary": "tar_trimmer",
+  "native_libs": [],
+  "name": "tar",
+  "args": ["-xf", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "tar.bc",
+  "config_files": []
+}

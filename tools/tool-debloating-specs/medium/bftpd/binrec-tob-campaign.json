@@ -1,0 +1,133 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-c"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "default-anon.conf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-default-anon.conf",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-serve/file.txt",
+          "destination": "./serve/file.txt",
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-client.sh",
+          "destination": null,
+          "permissions": true
+        }
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-allowed-cmds.py",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [
+        "./bftpd-client.sh &"
+      ],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-c"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "disabled-cmds-anon.conf"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-disabled-cmds-anon.conf",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-serve/file.txt",
+          "destination": "./serve/file.txt",
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-client-disabled.sh",
+          "destination": null,
+          "permissions": true
+        }
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/medium/input_files/bftpd-disallowed-cmds.py",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [
+        "./bftpd-client-disabled.sh &"
+      ],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

@@ -1,0 +1,10 @@
+{
+  "binary": "rm_trimmer",
+  "native_libs": [],
+  "name": "rm",
+  "args": ["-rf", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "rm.bc",
+  "config_files": []
+}

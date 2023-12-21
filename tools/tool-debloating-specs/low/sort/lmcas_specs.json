@@ -1,0 +1,22 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "sort",
+        "-u",
+        "-z"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/",
+      "syscall_mocks": {
+        "sys_rt_sigaction": {
+          "replace_sighup" : false
+        }
+      }
+    }
+  ]
+}

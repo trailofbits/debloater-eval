@@ -1,0 +1,10 @@
+{
+  "binary": "pdftohtml_trimmer",
+  "native_libs": ["/usr/lib/x86_64-linux-gnu/libpoppler.so.70", "-ljpeg", "-lopenjpeg", "-lpng12", "-lfreetype", "-lfontconfig", "-lpthread"],
+  "name": "pdftohtml",
+  "args": ["_"],
+  "modules": ["libpoppler.so.70.0.0.bc"],
+  "ldflags": [""],
+  "main": "pdftohtml.bc",
+  "config_files": []
+}

@@ -1,0 +1,10 @@
+{
+  "binary": "make_trimmer",
+  "native_libs": ["-ldl"],
+  "name": "make",
+  "args": ["install"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "make.bc",
+  "config_files": []
+}

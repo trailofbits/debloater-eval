@@ -1,0 +1,841 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-v"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-H"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-h"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-n"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "si"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-l"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-L"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "asdfg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-c"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-o"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "[r][a][n][d]*"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-q"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "1"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-s"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-v"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "a"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-i"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "Si"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-w"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "Si"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-x"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "Don\\'t"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-E"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "randomtext*"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "'ye '"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "cold"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr18"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "^D"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr19"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": ".$"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr20"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "\\^"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr21"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "\\^$"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr22"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "^[AEIOU]"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr23"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "^[^AEIOU]"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr24"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-F"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "randomtext*"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr25"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "blargazonkitty"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr26"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-E"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "free[^[:space:]]+"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data2"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data2",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr27"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-E"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "\"\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\""
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./grep-data"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/low/input_files/grep-data",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr27"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

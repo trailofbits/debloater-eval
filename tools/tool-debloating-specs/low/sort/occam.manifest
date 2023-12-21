@@ -1,0 +1,10 @@
+{
+  "binary": "sort_occam",
+  "native_libs": [],
+  "name": "sort",
+  "static_args": ["-u", "-z"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "sort.bc",
+  "dynamic_args": "1"
+}

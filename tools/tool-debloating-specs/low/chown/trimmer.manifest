@@ -1,0 +1,10 @@
+{
+ "binary": "chown_trimmer",
+ "native_libs": [],
+ "name": "chown",
+ "args": ["_", "_"],
+ "modules": [],
+ "ldflags": [""],
+ "main": "chown.bc",
+ "config_files": []
+} 

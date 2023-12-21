@@ -1,0 +1,231 @@
+{
+    "batch_meta" : {
+        "binary_base_path": "~/metis/debloater-eval.batch2/debloater-eval-binaries/",
+        "results_path": "~/metis/debloater-eval.batch2/results-debloater-eval-binaries"
+    },
+    "binaries" : {
+        "nginx-standard": {
+            "original_path": "benchmarks/high/nginx-1.23.3/binaries/64/nginx",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/high/nginx/chisel-2-binaries/nginx"
+            }
+        },
+        "nginx-buster": {
+            "original_path": "benchmarks/high/nginx-1.23.3/binaries/buster/nginx",
+            "variants": {
+                "chisel": "benchmarks-debloated/high/nginx/chisel/chisel-1-binaries/nginx",
+                "razor": "benchmarks-debloated/high/nginx/razor-results/nginx.orig.debloated"
+            }
+        },
+        "nmap-buster": {
+            "original_path": "benchmarks/high/nmap-7.93/binaries/buster/nmap",
+            "variants": {
+                "razor": "benchmarks-debloated/high/nmap/razor-results/nmap.orig.debloated"
+            }
+        },
+        "poppler-pdftohtml-standard": {
+            "original_path": "benchmarks/high/poppler-0.60/binaries/64/pdftohtml",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/high/poppler/chisel-2-binaries/pdftohtml"
+            }
+        },
+        "poppler-pdftohtml-buster": {
+            "original_path": "benchmarks/high/poppler-0.60/binaries/buster/pdftohtml",
+            "variants": {
+                "chisel": "benchmarks-debloated/high/poppler/chisel/chisel-1-binaries/pdftohtml"
+            }
+        },
+        "bzip2-standard": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/binaries/64/bzip2",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/bzip2/chisel-2-binaries/bzip2"
+            }
+        },
+        "bzip2-buster": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/binaries/buster/bzip2",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/bzip2/chisel/bzip2-1.0.5.reduced",
+                "razor": "benchmarks-debloated/low/bzip2/razor-results/bzip2.orig.debloated"
+            }
+        },
+        "chown-standard": {
+            "original_path": "benchmarks/low/chown-8.2/binaries/64/chown",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/chown/chisel-2-binaries/chown"
+            }
+        },
+        "chown-buster": {
+            "original_path": "benchmarks/low/chown-8.2/binaries/buster/chown",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/chown/chisel/chown-8.2.reduced",
+                "razor": "benchmarks-debloated/low/chown/razor-results/chown.orig.debloated"
+            }
+        },
+        "date-standard": {
+            "original_path": "benchmarks/low/date-8.21/binaries/64/date",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/date/chisel-2-binaries/date"
+            }
+        },
+        "date-buster": {
+            "original_path": "benchmarks/low/date-8.21/binaries/buster/date",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/date/chisel/date-8.21.reduced",
+                "razor": "benchmarks-debloated/low/date/razor-results/date.orig.debloated"
+            }
+        },
+        "grep-standard": {
+            "original_path": "benchmarks/low/grep-2.19/binaries/64/grep",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/grep/chisel-2-binaries/grep"
+            }
+        },
+        "grep-buster": {
+            "original_path": "benchmarks/low/grep-2.19/binaries/buster/grep",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/grep/chisel/grep-2.19.reduced",
+                "razor": "benchmarks-debloated/low/grep/razor-results/grep.orig.debloated"
+            }
+        },
+        "gzip-standard": {
+            "original_path": "benchmarks/low/gzip-1.2.4/binaries/64/gzip",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/gzip/chisel-2-binaries/gzip"
+            }
+        },
+        "gzip-buster": {
+            "original_path": "benchmarks/low/gzip-1.2.4/binaries/buster/gzip",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/gzip/chisel/gzip-1.2.4.reduced",
+                "razor": "benchmarks-debloated/low/gzip/razor-results/gzip.orig.debloated"
+            }
+        },
+        "mkdir-buster": {
+            "original_path": "benchmarks/low/mkdir-5.2.1/binaries/buster/mkdir",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/mkdir/chisel/mkdir-5.2.1.reduced",
+                "razor": "benchmarks-debloated/low/mkdir/razor-results/mkdir.orig.debloated"
+            }
+        },
+        "rm-standard": {
+            "original_path": "benchmarks/low/rm-8.4/binaries/64/rm",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/rm/chisel-2-binaries/rm"
+            }
+        },
+        "rm-buster": {
+            "original_path": "benchmarks/low/rm-8.4/binaries/buster/rm",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/rm/chisel/rm-8.4.reduced",
+                "razor": "benchmarks-debloated/low/rm/razor-results/rm.orig.debloated"
+            }
+        },
+        "sort-standard": {
+            "original_path": "benchmarks/low/sort-8.16/binaries/64/sort",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/sort/chisel-2-binaries/sort"
+            }
+        },
+        "sort-buster": {
+            "original_path": "benchmarks/low/sort-8.16/binaries/buster/sort",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/sort/chisel/sort-8.16.reduced",
+                "razor": "benchmarks-debloated/low/sort/razor-results/sort.orig.debloated"
+            }
+        },
+        "tar-buster": {
+            "original_path": "benchmarks/low/tar-1.14/binaries/buster/tar",
+            "variants": {
+                "razor": "benchmarks-debloated/low/tar/razor-results/tar.orig.debloated"
+            }
+        },
+        "uniq-standard": {
+            "original_path": "benchmarks/low/uniq-8.16/binaries/64/uniq",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/low/uniq/chisel-2-binaries/uniq"
+            }
+        },
+        "uniq-buster": {
+            "original_path": "benchmarks/low/uniq-8.16/binaries/buster/uniq",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/uniq/chisel/uniq-8.16.reduced",
+                "razor": "benchmarks-debloated/low/uniq/razor-results/uniq.orig.debloated"
+            }
+        },
+        "bftpd-standard": {
+            "original_path": "benchmarks/medium/bftpd-6.1/binaries/64/bftpd",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/medium/bftpd/chisel-2-binaries/bftpd"
+            }
+        },
+        "bftpd-buster": {
+            "original_path": "benchmarks/medium/bftpd-6.1/binaries/buster/bftpd",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/bftpd/chisel/chisel-1-binaries/bftpd"
+            }
+        },
+        "lighttpd-standard": {
+            "original_path": "benchmarks/medium/lighttpd-1.4/binaries/64/lighttpd",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/medium/lighttpd/chisel-2-binaries/lighttpd"
+            }
+        },
+        "lighttpd-buster": {
+            "original_path": "benchmarks/medium/lighttpd-1.4/binaries/buster/lighttpd",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/lighttpd/chisel/chisel-1-binaries/lighttpd",
+                "razor": "benchmarks-debloated/medium/lighttpd/razor-results/lighttpd.orig.debloated"
+            }
+        },
+        "make-buster": {
+            "original_path": "benchmarks/medium/make-4.2/binaries/buster/make",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/make/chisel/chisel-1-binaries/make"
+            }
+        },
+        "memcached-buster": {
+            "original_path": "benchmarks/medium/memcached-1.6.18/binaries/buster/memcached",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/memcached/chisel/chisel-1-binaries/memcached",
+                "razor": "benchmarks-debloated/medium/memcached/razor-results/memcached.orig.debloated"
+            }
+        },
+        "binutils-objdump-buster": {
+            "original_path": "benchmarks/medium/binutils-2.40/binaries/buster/objdump",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/objdump/chisel/chisel-1-binaries/objdump",
+                "razor": "benchmarks-debloated/medium/objdump/razor-results/objdump.orig.debloated"
+            }
+        },
+        "wget-standard": {
+            "original_path": "benchmarks/medium/wget-1.20.3/binaries/64/wget",
+            "variants": {
+                "chisel-2": "benchmarks-debloated/medium/wget/chisel-2-binaries/wget"
+            }
+        },
+        "wget-buster": {
+            "original_path": "benchmarks/medium/wget-1.20.3/binaries/buster/wget",
+            "variants": {
+                "chisel": "benchmarks-debloated/medium/wget/chisel/chisel-1-binaries/wget"
+            }
+        },
+        "imagemagick-standard": {
+            "original_path": "benchmarks/high/imagemagick-7.0.1-0/binaries/64/magick",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/high/imagemagick/gtirb-dynamic/magick.reduced"
+            }
+        },
+        "imagemagick-trimmer": {
+            "original_path": "benchmarks/high/imagemagick-7.0.1-0/trimmer_x64_bin/magick",
+            "variants": {
+                "trimmer": "benchmarks-debloated/high/imagemagick/trimmer/magick_trimmer"
+            }
+        },
+        "imagemagick-occam": {
+            "original_path": "benchmarks/high/imagemagick-7.0.1-0/occam_x64_bin/magick",
+            "variants": {
+                "occam": "benchmarks-debloated/high/imagemagick/occam/magick_occam"
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+ "binary": "bzip2_occam",
+ "native_libs": [],
+ "name": "bzip2",
+ "static_args": ["-c", "-f"],
+ "dynamic_args": "1",
+ "modules": [],
+ "ldflags": ["-O3"],
+ "main": "bzip2.bc"
+} 

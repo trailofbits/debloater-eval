@@ -1,0 +1,10 @@
+{
+  "binary": "uniq_trimmer",
+  "native_libs": [],
+  "name": "uniq",
+  "args": ["-i", "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "uniq.bc",
+  "config_files": []
+}

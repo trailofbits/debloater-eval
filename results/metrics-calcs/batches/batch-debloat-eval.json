@@ -1,0 +1,399 @@
+{
+    "batch_meta" : {
+        "binary_base_path": "~/metis/debloater-eval/debloater-eval-binaries/",
+        "results_path": "~/metis/debloater-eval/results-debloater-eval-binaries"
+    },
+    "binaries" : {
+        "nginx-standard": {
+            "original_path": "benchmarks/high/nginx-1.23.3/binaries/64/nginx",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/high/nginx/gtirb-dynamic/nginx.reduced",
+                "razor": "benchmarks-debloated/high/nginx/razor-results/nginx.orig.debloated"
+            }
+        },
+        "nginx-occam": {
+            "original_path": "benchmarks/high/nginx-1.23.3/occam_x64_bin/nginx",
+            "variants": {
+                "occam": "benchmarks-debloated/high/nginx/occam/nginx_occam"
+            }
+        },
+        "nginx-trimmer": {
+            "original_path": "benchmarks/high/nginx-1.23.3/trimmer_x64_bin/nginx",
+            "variants": {
+                "trimmer": "benchmarks-debloated/high/nginx/trimmer/nginx_trimmer"
+            }
+        },
+        "nginx-lmcas": {
+            "original_path": "benchmarks/high/nginx-1.23.3/lmcas/nginx",
+            "variants": {
+                "lmcas": "benchmarks-debloated/high/nginx/lmcas/nginx_lmcas"
+            }
+        },
+        "nmap-standard": {
+            "original_path": "benchmarks/high/nmap-7.93/binaries/64/nmap",
+            "variants": {
+                "razor": "benchmarks-debloated/high/nmap/razor-results/nmap.orig_temp/nmap.orig.debloated",
+                "gtirb-dynamic": "benchmarks-debloated/high/nmap/gtirb-dynamic/nmap.reduced"
+            }
+        },
+        "nmap-occam": {
+            "original_path": "benchmarks/high/nmap-7.93/occam_x64_bin/nmap",
+            "variants": {
+                "occam": "benchmarks-debloated/high/nmap/occam/nmap_occam"
+            }
+        },
+        "nmap-trimmer": {
+            "original_path": "benchmarks/high/nmap-7.93/trimmer_x64_bin/nmap",
+            "variants": {
+                "trimmer": "benchmarks-debloated/high/nmap/trimmer/nmap_trimmer"
+            }
+        },
+        "poppler-pdftohtml-standard": {
+            "original_path": "benchmarks/high/poppler-0.60/binaries/64/pdftohtml",
+            "variants": {
+                "razor": "benchmarks-debloated/high/poppler/razor-results/pdftohtml.orig.debloated",
+                "gtirb-dynamic":"benchmarks-debloated/high/poppler/gtirb-dynamic/pdftohtml.reduced"
+
+            }
+        },
+        "poppler-pdftohtml-occam": {
+            "original_path": "benchmarks/high/poppler-0.60/occam_x64_bin/pdftohtml",
+            "variants": {
+                "occam": "benchmarks-debloated/high/poppler/occam/pdftohtml_occam"
+            }
+        },
+        "poppler-pdftohtml-trimmer": {
+            "original_path": "benchmarks/high/poppler-0.60/trimmer_x64_bin/pdftohtml",
+            "variants": {
+                "trimmer": "benchmarks-debloated/high/poppler/trimmer/pdftohtml_trimmer"
+            }
+        },
+        "bftpd-trimmer": {
+            "original_path": "benchmarks/medium/bftpd-6.1/trimmer_x64_bin/bftpd",
+            "variants": {
+                "trimmer": "benchmarks-debloated/medium/bftpd/trimmer/bftpd_trimmer"
+            }
+        },
+        "bftpd-occam": {
+            "original_path": "benchmarks/medium/bftpd-6.1/occam_x64_bin/bftpd",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/bftpd/occam/bftpd_occam"
+            }
+        },
+        "bftpd-lmcas": {
+            "original_path": "benchmarks/medium/bftpd-6.1/lmcas/bftpd",
+            "variants": {
+                "lmcas": "benchmarks-debloated/medium/bftpd/lmcas/bftpd_lmcas"
+            }
+        },
+        "binutils-objdump-standard": {
+            "original_path": "benchmarks/medium/binutils-2.40/binaries/64/objdump",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/medium/binutils/gtirb-dynamic/objdump.reduced",
+                "razor": "benchmarks-debloated/medium/objdump/razor-results/objdump.orig.debloated"
+            }
+        },
+        "binutils-objdump-occam": {
+            "original_path": "benchmarks/medium/binutils-2.40/occam_x64_bin/objdump",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/objdump/occam/objdump_occam"
+            }
+        },
+        "binutils-objdump-trimmer": {
+            "original_path": "benchmarks/medium/binutils-2.40/trimmer_x64_bin/objdump",
+            "variants": {
+                "trimmer": "benchmarks-debloated/medium/objdump/trimmer/objdump_trimmer"
+            }
+        },
+        "lighttpd-standard": {
+            "original_path": "benchmarks/medium/lighttpd-1.4/binaries/64/lighttpd",
+            "variants": {
+                "razor": "benchmarks-debloated/medium/lighttpd/razor-results/lighttpd.orig.debloated"
+            }
+        },
+        "lighttpd-occam": {
+            "original_path": "benchmarks/medium/lighttpd-1.4/occam_x64_bin/lighttpd",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/lighttpd/occam/lighttpd_occam"
+            }
+        },
+        "make-standard": {
+            "original_path": "benchmarks/medium/make-4.2/binaries/64/make",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/medium/make/gtirb-dynamic/make.reduced"
+            }
+        },
+        "make-occam": {
+            "original_path": "benchmarks/medium/make-4.2/occam_x64_bin/make",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/make/occam/make_occam"
+            }
+        },
+        "memcached-standard": {
+            "original_path": "benchmarks/medium/memcached-1.6.18/binaries/64/memcached",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/medium/memcached/gtirb-dynamic/memcached.reduced",
+                "razor": "benchmarks-debloated/medium/memcached/razor-results/memcached.orig.debloated"
+            }
+        },
+        "memcached-occam": {
+            "original_path": "benchmarks/medium/memcached-1.6.18/occam_x64_bin/memcached",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/memcached/occam/memcached_occam"
+            }
+        },
+        "memcached-trimmer": {
+            "original_path": "benchmarks/medium/memcached-1.6.18/trimmer_x64_bin/memcached",
+            "variants": {
+                "trimmer": "benchmarks-debloated/medium/memcached/trimmer/memcached_trimmer"
+            }
+        },
+        "wget-standard": {
+            "original_path": "benchmarks/medium/wget-1.20.3/binaries/64/wget",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/medium/wget/gtirb-dynamic/wget.reduced"
+            }
+        },
+        "wget-lmcas": {
+            "original_path": "benchmarks/medium/wget-1.20.3/lmcas/wget",
+            "variants": {
+                "lmcas": "benchmarks-debloated/medium/wget/lmcas/wget_lmcas"
+            }
+        },
+        "wget-occam": {
+            "original_path": "benchmarks/medium/wget-1.20.3/occam_x64_bin/wget",
+            "variants": {
+                "occam": "benchmarks-debloated/medium/wget/occam/wget_occam"
+            }
+        },
+        "wget-trimmer": {
+            "original_path": "benchmarks/medium/wget-1.20.3/trimmer_x64_bin/wget",
+            "variants": {
+                "trimmer": "benchmarks-debloated/medium/wget/trimmer/wget_trimmer"
+            }
+        },
+        "bzip2-standard": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/binaries/64/bzip2",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/bzip2/chisel/bzip2-1.0.5.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/bzip2/gtirb-dynamic/bzip2.reduced",
+                "razor": "benchmarks-debloated/low/bzip2/razor-results/bzip2.orig.debloated"
+            }
+        },
+        "bzip2-lmcas": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/lmcas/bzip2",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/bzip2/lmcas/bzip2_lmcas"
+            }
+        },
+        "bzip2-occam": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/occam_x64_bin/bzip2",
+            "variants": {
+                "occam": "benchmarks-debloated/low/bzip2/occam/bzip2_occam"
+            }
+        },
+        "bzip2-trimmer": {
+            "original_path": "benchmarks/low/bzip2-1.0.5/trimmer_x64_bin/bzip2",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/bzip2/trimmer/bzip2_trimmer"
+            }
+        },
+        "chown-standard": {
+            "original_path": "benchmarks/low/chown-8.2/binaries/64/chown",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/chown/chisel/chown-8.2.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/chown/gtirb-dynamic/chown.reduced",
+                "razor": "benchmarks-debloated/low/chown/razor-results/chown.orig.debloated"
+            }
+        },
+        "chown-lmcas": {
+            "original_path": "benchmarks/low/chown-8.2/lmcas/chown",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/chown/lmcas/chown_lmcas"
+            }
+        },
+        "chown-occam": {
+            "original_path": "benchmarks/low/chown-8.2/occam_x64_bin/chown",
+            "variants": {
+                "occam": "benchmarks-debloated/low/chown/occam/chown_occam"
+            }
+        },
+        "chown-trimmer": {
+            "original_path": "benchmarks/low/chown-8.2/trimmer_x64_bin/chown",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/chown/trimmer/chown_trimmer"
+            }
+        },
+        "date-standard": {
+            "original_path": "benchmarks/low/date-8.21/binaries/64/date",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/date/chisel/date-8.21.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/date/gtirb-dynamic/date.reduced",
+                "razor": "benchmarks-debloated/low/date/razor-results/date.orig.debloated"
+            }
+        },
+        "date-occam": {
+            "original_path": "benchmarks/low/date-8.21/occam_x64_bin/date",
+            "variants": {
+                "occam": "benchmarks-debloated/low/date/occam/date_occam"
+            }
+        },
+        "grep-standard": {
+            "original_path": "benchmarks/low/grep-2.19/binaries/64/grep",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/grep/chisel/grep-2.19.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/grep/gtirb-dynamic/grep.reduced",
+                "razor": "benchmarks-debloated/low/grep/razor-results/grep.orig.debloated"
+            }
+        },
+        "grep-lmcas": {
+            "original_path": "benchmarks/low/grep-2.19/lmcas/grep",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/grep/lmcas/grep_lmcas"
+            }
+        },
+        "grep-occam": {
+            "original_path": "benchmarks/low/grep-2.19/occam_x64_bin/grep",
+            "variants": {
+                "occam": "benchmarks-debloated/low/grep/occam/grep_occam"
+            }
+        },
+        "grep-trimmer": {
+            "original_path": "benchmarks/low/grep-2.19/trimmer_x64_bin/grep",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/grep/trimmer/grep_trimmer"
+            }
+        },
+        "gzip-standard": {
+            "original_path": "benchmarks/low/gzip-1.2.4/binaries/64/gzip",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/gzip/chisel/gzip-1.2.4.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/gzip/gtirb-dynamic/gzip.reduced",
+                "razor": "benchmarks-debloated/low/gzip/razor-results/gzip.orig.debloated"
+            }
+        },
+        "gzip-lmcas": {
+            "original_path": "benchmarks/low/gzip-1.2.4/lmcas/gzip",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/gzip/lmcas/gzip_lmcas"
+            }
+        },
+        "gzip-occam": {
+            "original_path": "benchmarks/low/gzip-1.2.4/occam_x64_bin/gzip",
+            "variants": {
+                "occam": "benchmarks-debloated/low/gzip/occam/gzip_occam"
+            }
+        },
+        "mkdir-standard": {
+            "original_path": "benchmarks/low/mkdir-5.2.1/binaries/64/mkdir",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/mkdir/chisel/mkdir-5.2.1.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/mkdir/gtirb-dynamic/mkdir.reduced",
+                "razor": "benchmarks-debloated/low/mkdir/razor-results/mkdir.orig.debloated"
+            }
+        },
+        "mkdir-lmcas": {
+            "original_path": "benchmarks/low/mkdir-5.2.1/lmcas/mkdir",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/mkdir/lmcas/mkdir_lmcas"
+            }
+        },
+        "mkdir-occam": {
+            "original_path": "benchmarks/low/mkdir-5.2.1/occam_x64_bin/mkdir",
+            "variants": {
+                "occam": "benchmarks-debloated/low/mkdir/occam/mkdir_occam"
+            }
+        },
+        "rm-standard": {
+            "original_path": "benchmarks/low/rm-8.4/binaries/64/rm",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/rm/chisel/rm-8.4.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/rm/gtirb-dynamic/rm.reduced",
+                "razor": "benchmarks-debloated/low/rm/razor-results/rm.orig.debloated"
+            }
+        },
+        "rm-occam": {
+            "original_path": "benchmarks/low/rm-8.4/occam_x64_bin/rm",
+            "variants": {
+                "occam": "benchmarks-debloated/low/rm/occam/rm_occam"
+            }
+        },
+        "rm-trimmer": {
+            "original_path": "benchmarks/low/rm-8.4/trimmer_x64_bin/rm",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/rm/trimmer/rm_trimmer"
+            }
+        },
+        "sort-standard": {
+            "original_path": "benchmarks/low/sort-8.16/binaries/64/sort",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/sort/chisel/sort-8.16.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/sort/gtirb-dynamic/sort.reduced",
+                "razor": "benchmarks-debloated/low/sort/razor-results/sort.orig.debloated"
+            }
+        },
+        "sort-lmcas": {
+            "original_path": "benchmarks/low/sort-8.16/lmcas/sort",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/sort/lmcas/sort_lmcas"
+            }
+        },
+        "sort-occam": {
+            "original_path": "benchmarks/low/sort-8.16/occam_x64_bin/sort",
+            "variants": {
+                "occam": "benchmarks-debloated/low/sort/occam/sort_occam"
+            }
+        },
+        "sort-trimmer": {
+            "original_path": "benchmarks/low/sort-8.16/trimmer_x64_bin/sort",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/sort/trimmer/sort_trimmer"
+            }
+        },
+        "tar-standard": {
+            "original_path": "benchmarks/low/tar-1.14/binaries/64/tar",
+            "variants": {
+                "gtirb-dynamic": "benchmarks-debloated/low/tar/gtirb-dynamic/tar.reduced",
+                "razor": "benchmarks-debloated/low/tar/razor-results/tar.orig.debloated"
+            }
+        },
+        "tar-occam": {
+            "original_path": "benchmarks/low/tar-1.14/occam_x64_bin/tar",
+            "variants": {
+                "occam": "benchmarks-debloated/low/tar/occam/tar_occam"
+            }
+        },
+        "tar-trimmer": {
+            "original_path": "benchmarks/low/tar-1.14/trimmer_x64_bin/tar",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/tar/trimmer/tar_trimmer"
+            }
+        },
+        "uniq-standard": {
+            "original_path": "benchmarks/low/uniq-8.16/binaries/64/uniq",
+            "variants": {
+                "chisel": "benchmarks-debloated/low/uniq/chisel/uniq-8.16.reduced",
+                "gtirb-dynamic": "benchmarks-debloated/low/uniq/gtirb-dynamic/uniq.reduced",
+                "razor": "benchmarks-debloated/low/uniq/razor-results/uniq.orig_temp/uniq.orig.debloated"
+            }
+        },
+        "uniq-lmcas": {
+            "original_path": "benchmarks/low/uniq-8.16/lmcas/uniq",
+            "variants": {
+                "lmcas": "benchmarks-debloated/low/uniq/lmcas/uniq_lmcas"
+            }
+        },
+        "uniq-occam": {
+            "original_path": "benchmarks/low/uniq-8.16/occam_x64_bin/uniq",
+            "variants": {
+                "occam": "benchmarks-debloated/low/uniq/occam/uniq_occam"
+            }
+        },
+        "uniq-trimmer": {
+            "original_path": "benchmarks/low/uniq-8.16/trimmer_x64_bin/uniq",
+            "variants": {
+                "trimmer": "benchmarks-debloated/low/uniq/trimmer/uniq_trimmer"
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+--- sort.c.orig	2023-05-09 12:23:17.845982898 -0400
++++ sort.c	2023-05-09 12:49:08.441779699 -0400
+@@ -173,6 +173,8 @@
+ 
+ #define NONZERO(x) ((x) != 0)
+ 
++__attribute__((noinline)) void _lmcas_neck(void) {}
++
+ /* The kind of blanks for '-b' to skip in various options. */
+ enum blanktype { bl_start, bl_end, bl_both };
+ 
+@@ -4581,6 +4583,8 @@
+         }
+     }
+ 
++  _lmcas_neck();
++
+   if (files_from)
+     {
+       FILE *stream;

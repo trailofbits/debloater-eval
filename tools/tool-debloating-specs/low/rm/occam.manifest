@@ -1,0 +1,10 @@
+{
+  "binary": "rm_occam",
+  "native_libs": [],
+  "name": "rm",
+  "static_args": ["-rf"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "rm.bc",
+  "dynamic_args": "1"
+}

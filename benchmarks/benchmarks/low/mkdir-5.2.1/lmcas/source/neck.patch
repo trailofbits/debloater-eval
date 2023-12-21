@@ -1,0 +1,35 @@
+--- mkdir.c.orig	2023-05-09 13:33:49.045818241 -0400
++++ mkdir.c	2023-05-09 14:05:50.784343380 -0400
+@@ -49,6 +49,9 @@
+   {NULL, 0, NULL, 0}
+ };
+ 
++static bool neck_placed = false;
++__attribute__((noinline)) void _lmcas_neck(void) {}
++
+ void
+ usage (int status)
+ {
+@@ -78,6 +81,10 @@
+       fputs (VERSION_OPTION_DESCRIPTION, stdout);
+       emit_ancillary_info (PROGRAM_NAME);
+     }
++  if (!neck_placed) {
++    _lmcas_neck();
++    neck_placed = true;
++  }
+   exit (status);
+ }
+ 
+@@ -247,6 +254,11 @@
+         }
+     }
+ 
++    if (!neck_placed) {
++      _lmcas_neck();
++      neck_placed = true;
++    }
++
+   if (optind == argc)
+     {
+       error (0, 0, _("missing operand"));

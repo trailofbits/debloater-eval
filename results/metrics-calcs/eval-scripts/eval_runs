@@ -1,0 +1,21 @@
+# commands to run for ubuntu eval.yml
+timeout 12h pipenv run differ --verbose samples/lighttpd/eval.yml 2>&1 | tee reports/lighttpd-eval.log
+timeout 12h pipenv run differ --verbose samples/grep-2.19/eval.yml 2>&1 | tee reports/grep-eval.log
+timeout 12h pipenv run differ --verbose samples/mkdir-5.2.1/eval.yml 2>&1 | tee reports/mkdir-eval.log
+timeout 12h pipenv run differ --verbose samples/gzip-1.2.4/eval.yml 2>&1 | tee reports/gzip-eval.log
+timeout 12h pipenv run differ --verbose samples/rm-8.4/eval.yml 2>&1 | tee reports/rm-eval.log
+timeout 12h pipenv run differ --verbose samples/wget/eval.yml 2>&1 | tee reports/wget-eval.log
+timeout 12h pipenv run differ --verbose samples/memcached/eval.yml 2>&1 | tee reports/memcached-eval.log
+timeout 12h pipenv run differ --verbose samples/tar-1.14/eval.yml 2>&1 | tee reports/tar-eval.log
+timeout 12h pipenv run differ --verbose samples/bzip2-1.0.5/eval.yml 2>&1 | tee reports/bzip2-eval.log
+timeout 12h pipenv run differ --verbose samples/nginx/eval.yml 2>&1 | tee reports/nginx-eval.log
+timeout 12h pipenv run differ --verbose samples/uniq-8.16/eval.yml 2>&1 | tee reports/uniq-eval.log
+timeout 12h pipenv run differ --verbose samples/date-8.21/eval.yml 2>&1 | tee reports/date-eval.log
+timeout 12h pipenv run differ --verbose samples/bftpd-6.1/eval.yml 2>&1 | tee reports/bftpd-eval.log
+timeout 12h pipenv run differ --verbose samples/make/eval.yml 2>&1 | tee reports/make-eval.log
+timeout 12h pipenv run differ --verbose samples/imagemagick/eval.yml 2>&1 | tee reports/imagemagick-eval.log
+timeout 12h pipenv run differ --verbose samples/pdftohtml/eval.yml 2>&1 | tee reports/pdftohtml-eval.log
+timeout 12h pipenv run differ --verbose samples/sort-8.16/eval.yml 2>&1 | tee reports/sort-eval.log
+timeout 12h pipenv run differ --verbose samples/chown-8.2/eval.yml 2>&1 | tee reports/chown-eval.log
+timeout 12h pipenv run differ --verbose samples/objdump/eval.yml 2>&1 | tee reports/objdump-eval.log
+timeout 12h pipenv run differ --verbose samples/nmap/eval.yml 2>&1 | tee reports/nmap-eval.log

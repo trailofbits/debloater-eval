@@ -1,0 +1,1300 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.png",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.png",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.png",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.bmp",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.bmp",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.bmp",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.gif",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.png"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.gif",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.gif"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs.bmp"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.gif",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-flip"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-flipped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-flop"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-flopped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-transverse"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-transverse.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-transpose"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-transpose.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-resize"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "50%"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-resized.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr18"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-resize"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "150%"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-resized.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr19"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-scale"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "50%"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-scaled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr20"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-scale"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "150%"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-scaled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr21"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-negate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr22"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+negate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr23"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr24"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "90"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr25"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr26"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "360"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr27"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-90"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr28"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-rotate"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-negated.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr29"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr30"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr31"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr32"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr33"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr34"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr35"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr36"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr37"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-roll"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "+270"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-rolled.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr38"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-crop"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "6x6+0+0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-cropped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr39"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-crop"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "6x399+90+90"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-cropped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr40"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-crop"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "399x6+0+90"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-cropped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr41"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "eggs.jpg"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-crop"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "399x399+90+0"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "eggs-cropped.jpg"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/debloater-eval/tool-debloating-specs/high/input_files/eggs.jpg",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr42"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}
