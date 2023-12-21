@@ -1,0 +1,10 @@
+{
+  "binary": "gzip_occam",
+  "native_libs": [],
+  "name": "gzip",
+  "static_args": ["-c",  "-f"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "gzip.bc",
+  "dynamic_args": "1"
+}

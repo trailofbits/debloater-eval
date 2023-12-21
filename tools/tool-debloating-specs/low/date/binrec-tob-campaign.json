@@ -1,0 +1,802 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--date '1996-1-{{day}}' +{{fmt}}"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--date '1998-1-1 3 years' +%Y"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d 'TZ=\"America/Los_Angeles\" 09:00 next Fri'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 now\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 yesterday\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 tomorrow\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 6 years ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr8"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 7 months ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr9"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 8 weeks ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr10"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--rfc-3339=ns -d'1970-01-01 00:00:00.2234567 UTC +961062237.987654321 sec'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr11"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d '2005-03-27 +1 day' '+%Y'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr12"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d @-22 +%05s"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr13"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d @-22 +%_5s"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr14"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"72057594037927935\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr15"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d 1999-12-08 +%_3d"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr16"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d 1999-12-08 +%03d"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr17"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1999-12-08 7:30\" \"+%^c\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr18"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1999-12-08 7:30\" \"+%^c\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr19"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--rfc-3339=ns -d \"2038-01-19 03:14:07.999999999\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr20"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--rfc-3339=sec -d @31536000"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr21"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--rfc-3339=sec -d @31536000"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr22"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--rfc-3339=date -d May-23-2003"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr23"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d '1999-06-01' '+%3004Y'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr24"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--utc -d '1970-01-01 UTC +961062237 sec' \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr25"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--utc -d '1970-01-01 00:00:00 UTC +961062237 sec' \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr26"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-R -d \"1997-01-19 08:17:48 +0\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr27"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d 000909 \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr28"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-u -d '1996-11-10 0:00:00 +0' \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr29"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 4 seconds ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr30"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d '20050101  1 day' +%F"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr31"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d '20050101 +1 day' +%F"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr32"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next second\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr33"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next minute\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr34"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next hour\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr35"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next day\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr36"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next week\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr37"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next month\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr38"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 next year\" '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr39"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-u -d '08/01/97 6:00' '+%D,%H:%M'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr40"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-u -d '08/01/97 6:00 UTC +4 hours' '+%D,%H:%M'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr41"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-f"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr42"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-u --file=datefile '+%Y-%m-%d %T'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/datefile",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr43"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d '1970-01-01 UTC 946684800 sec' +'%Y-%m-%d %T %z'"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr44"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 this minute\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr45"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 this hour\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr46"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 this week\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr47"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 this month\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr48"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 this year\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr49"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 1 day ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr50"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 2 hours ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr51"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-d \"1997-01-19 08:17:48 +0 3 minutes ago\" \"+%Y-%m-%d %T\""
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr52"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

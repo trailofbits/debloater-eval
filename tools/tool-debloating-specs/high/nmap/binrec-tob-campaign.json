@@ -1,0 +1,219 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "nc -l 8080 & <<EOF",
+        "hello world",
+        "EOF",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-p1-7080,8080"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "nc -l 8080 & <<EOF",
+        "hello world",
+        "EOF",
+        "sleep 5",
+        "nc -l 8081 & <<EOF",
+        "you should not see this",
+        "EOF",
+        "sleep 5",
+        "nc -l 7080 & <<EOF",
+        "hello world",
+        "EOF",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-sV"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "python -m http.server --directory serve 8080 &>/dev/null &",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr5"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-sV"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-oG"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "report"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "python -m http.server --directory serve 8080 &>/dev/null &",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr6"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-sV"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-oN"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "report"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "python -m http.server --directory serve 8080 &>/dev/null &",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr7"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-sT"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-sV"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "-oX"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "report"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "127.0.0.1"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [
+        "python -m http.server --directory serve 8080 &>/dev/null &",
+        "sleep 5"
+      ],
+      "teardown": [],
+      "name": "tr8"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

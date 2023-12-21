@@ -1,0 +1,10 @@
+{
+  "binary": "wget_trimmer",
+  "native_libs": ["-lnettle", "-lz", "-lpcre2-8", "-luuid", "-lgnutls"],
+  "name": "wget",
+  "args": ["_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "wget.bc",
+  "config_files": []
+}

@@ -1,0 +1,10 @@
+{
+ "binary": "chown_occam",
+ "native_libs": [],
+ "name": "chown",
+ "static_args": [],
+ "modules": [],
+ "ldflags": ["-O3"],
+ "main": "chown.bc",
+ "dynamic_args": "2"
+} 

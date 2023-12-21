@@ -1,0 +1,10 @@
+{
+ "binary": "date_trimmer",
+ "native_libs": [],
+ "name": "date",
+ "args": ["-d", "_", "_"],
+ "modules": [],
+ "ldflags": [""],
+ "main": "date.bc",
+ "config_files": []
+} 

@@ -1,0 +1,79 @@
+assets:
+- '*'
+build:
+  args:
+  - -e
+  - -c
+  - rm -f src/wget;/bin/bash -c "make || true";file src/wget
+  command: bash
+env:
+  CC: 'clang -O3 -fPIC -fPIE -pie '
+  CFLAGS: '-O3 -fPIC -fPIE '
+  CXX: 'clang++ -O3 -fPIC -fPIE -pie '
+  CXXFLAGS: '-O3 -fPIC -fPIE '
+  FORCE_UNSAFE_CONFIGURE: '1'
+  LDFLAGS: '-pie '
+oracle:
+  command: ' /bin/bash -c "source /chisel_env/bin/activate && python3 /host/tool-debloating-specs/chisel_oracle.py   ./src/wget
+    medium.wget.oracle_wget"'
+prepare:
+  command: ./configure
+sanitized_build:
+  args:
+  - -e
+  - -c
+  - rm -f src/wget;/bin/bash -c "make || true";file src/wget
+  command: bash
+  env:
+    CC: 'clang -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration '
+    CXX: 'clang++ -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration '
+    FORCE_UNSAFE_CONFIGURE: '1'
+    LDFLAGS: '-pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+sanitized_prepare:
+  command: ./configure
+  env:
+    CC: 'clang -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration '
+    CXX: 'clang++ -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration '
+    FORCE_UNSAFE_CONFIGURE: '1'
+    LDFLAGS: '-pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+sources:
+- '**/*.c'
+- '**/*.h'

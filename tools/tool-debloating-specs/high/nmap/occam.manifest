@@ -1,0 +1,10 @@
+{
+  "binary": "nmap_occam",
+  "native_libs": ["-ldl", "-lz", "-lpcre", "-lssl", "-lcrypto", "-lpthread"],
+  "name": "nmap",
+  "static_args": ["-sT", "-p1-7080,8080"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "nmap.bc",
+  "dynamic_args": "1"
+}

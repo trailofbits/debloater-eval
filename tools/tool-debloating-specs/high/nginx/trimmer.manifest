@@ -1,0 +1,10 @@
+{
+  "binary": "nginx_trimmer",
+  "native_libs": ["-lz", "-ldl", "-lpthread", "-lpcre2-8", "-lcrypt"],
+  "name": "nginx",
+  "args": ["-p",  "_", "-c", "nginx-file_server.conf"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "nginx.bc",
+  "config_files": ["nginx-file_server.conf"]
+}

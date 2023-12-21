@@ -1,0 +1,27 @@
+--- coreutils-8.26/src/uniq.c	2016-11-06 17:15:30.000000000 -0500
++++ coreutils-8.26-updated/src/uniq.c	2023-05-09 11:27:28.364955807 -0400
+@@ -52,6 +52,8 @@
+     }						\
+   while (0)
+ 
++__attribute__((noinline)) void _lmcas_neck(void) {}
++
+ /* True if the LC_COLLATE locale is hard.  */
+ static bool hard_LC_COLLATE;
+ 
+@@ -224,6 +226,7 @@
+ "), stdout);
+       emit_ancillary_info (PROGRAM_NAME);
+     }
++  _lmcas_neck();
+   exit (status);
+ }
+ 
+@@ -644,6 +647,7 @@
+           usage (EXIT_FAILURE);
+         }
+     }
++    _lmcas_neck();
+ 
+   /* Note we could allow --group with -D at least, and that would
+      avoid the need to specify a grouping method to --all-repeated.

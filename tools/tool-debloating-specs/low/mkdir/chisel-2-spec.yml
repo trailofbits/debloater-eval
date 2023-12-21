@@ -1,0 +1,58 @@
+assets:
+- '*'
+build:
+  args:
+    - -e
+    - -c
+    - rm -rf src/mkdir; /bin/bash -c "make || true"; file src/mkdir;
+  command: bash
+env:
+  CC: clang
+  CFLAGS: '-O3 -fPIC -fPIE -pie '
+  CXX: clang++
+  CXXFLAGS: '-O3 -fPIC -fPIE -pie '
+  LIBRARY_PATH: /usr/lib/i386-linux-gnu/
+oracle:
+  command: oracle.sh
+prepare:
+  command: ./configure
+# The sanitizers cause the oracle to fail
+#sanitized_build:
+#  command: make
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    LIBRARY_PATH: /usr/lib/i386-linux-gnu/
+#sanitized_prepare:
+#  command: ./configure
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    LIBRARY_PATH: /usr/lib/i386-linux-gnu/
+sources:
+- '**/*.c'
+- '**/*.h'

@@ -1,0 +1,424 @@
+.configure-build: &configure-build
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "clang {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "clang++ {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+
+high/imagemagick-7.0.1-0:
+  source-dir: ImageMagick
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "gcc {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "g++ {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+  packages:
+    - pkg-config
+    - autoconf
+    - libgomp1
+    - libomp-dev
+    - libjpeg-dev
+    - libpng-dev
+  binaries:
+    - utilities/.libs/magick
+    - MagickCore/.libs/libMagickCore-7.Q16HDRI.so.0.0.0
+    - MagickWand/.libs/libMagickWand-7.Q16HDRI.so.0.0.0
+    - MagickCore/.libs/libMagickCore-7.Q16HDRI.so.0
+    - MagickWand/.libs/libMagickWand-7.Q16HDRI.so.0
+    - ./config/coder.xml
+    - ./config/colors.xml
+    - ./config/configure.xml
+    - ./config/delegates.xml
+    - ./config/english.xml
+    - ./config/francais.xml
+    - ./config/locale.xml
+    - ./config/log.xml
+    - ./config/magic.xml
+    - ./config/mime.xml
+    - ./config/policy.xml
+    - ./config/quantization-table.xml
+    - ./config/thresholds.xml
+    - ./config/type.xml
+    - ./config/type-ghostscript.xml
+    - ./config/type-windows.xml
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+
+high/nginx-1.23.3:
+  source-dir: nginx
+  packages:
+    - libpcre2-dev
+    - libpcre2-dev:i386
+    - libz-dev
+    - libz-dev:i386
+    - wget # needed by the chisel oracle
+  binaries:
+    - objs/nginx
+  env:
+    CC: "clang {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "clang++ {LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - './auto/configure'
+  build:
+    - 'make'
+
+high/nmap-7.93:
+  source-dir: nmap
+  packages:
+    - autoconf
+    - libssl-dev
+    - libssl-dev:i386
+    - python3-distutils
+    - libssl-dev
+    - netcat # Needed by the oracle
+  binaries:
+    - nmap
+    - nmap-services
+    - nmap-service-probes
+    - nmap-protocols
+    - nmap-rpc
+    - nmap-os-db
+    - nmap-mac-prefixes
+    - nse_main.lua
+    - nselib
+    - scripts
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "clang {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "clang++ {LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+
+high/poppler-0.60:
+  source-dir: poppler
+  packages:
+    "64":
+      - cmake
+      - libfreetype-dev
+      - libfontconfig-dev
+      - libjpeg-dev
+      - libboost-dev
+      - libopenjp2-7-dev
+      - unzip # needed by the oracle
+    "32":
+      - cmake
+      - libfreetype-dev:i386
+      - libopenjp2-7-dev:i386
+      - libboost-dev:i386
+      - libjpeg-dev:i386
+      - libfontconfig-dev:i386
+  binaries:
+    - utils/pdftohtml
+    - libpoppler.so.70.0.0
+    - libpoppler.so.70
+  env: {}
+  pre-build:
+    "32":
+      - sed -i "21i#undef USE_OPENJPEG1\n#define USE_OPENJPEG2" ./poppler/JPEG2000Stream.cc
+      - 'cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}" -DCMAKE_CXX_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}" -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DLIBOPENJPEG_LIBRARIES=/usr/lib/i386-linux-gnu/libopenjp2.so.7 -DLIBOPENJPEG_INCLUDE_DIR=/usr/include/openjpeg-2.3'
+    "64":
+      - 'cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_C_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}" -DCMAKE_CXX_FLAGS="{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}" -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang'
+  build:
+    - 'make'
+
+medium/make-4.2:
+  source-dir: make
+  packages:
+    - autotools-dev
+    - pkg-config
+    - autoconf
+    - automake
+    - libtool
+    - autopoint
+    - wget
+    - gettext
+    - texinfo
+    - libz-dev
+  binaries:
+    - make
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "clang {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "clang++ {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+  init:
+    - autoreconf --install
+    - sed -i 's/_GNU_GLOB_INTERFACE_VERSION == GLOB_INTERFACE_VERSION/_GNU_GLOB_INTERFACE_VERSION >= GLOB_INTERFACE_VERSION/' configure.ac
+    - autoreconf
+  pre-build:
+    - ./configure
+  build:
+    - make update
+    - make make
+
+medium/wget-1.20.3:
+  source-dir: wget
+  packages:
+    - flex
+    - autoconf
+    - automake
+    - autoconf-archive
+    - flex
+    - autoconf
+    - gettext
+    - rsync
+    - gperf
+    - autopoint
+    - gettext
+    - texinfo
+    - git
+    - gnulib
+    - wget
+    - pkg-config
+    - gnutls-dev
+    - gnutls-dev:i386
+    - libz-dev
+  binaries:
+    - src/wget
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: "clang {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXX: "clang++ {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LDFLAGS: "{LINK_FLAGS} {ARCH_FLAGS}"
+    CFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {ARCH_FLAGS}"
+  init:
+    - /bin/bash -c "./bootstrap --gnulib-srcdir=/usr/bin/ || true"
+  pre-build:
+    - ./configure
+  build:
+    - rm -f src/wget
+    - /bin/bash -c "make || true"
+    - file src/wget
+
+medium/bftpd-6.1:
+  source-dir: original
+  packages:
+    - lftp # needed by oracle
+  binaries:
+    - bftpd
+  <<: *configure-build
+
+medium/binutils-2.40: 
+  source-dir: binutils-gdb
+  binaries:
+    - binutils/objdump
+  packages:
+    - libmpfr-dev
+    - bison
+    - flex
+    - texinfo
+  env:
+    CC: clang {ARCH_FLAGS} -lgcc
+    CXX: clang++ {ARCH_FLAGS} -lgcc
+    CFLAGS: "-DHAVE_LIMITS_H -DHAVE_STDLIB_H -DHAVE_FCNTL_H {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+
+medium/lighttpd-1.4:
+  source-dir: lighttpd1.4
+  packages:
+    - wget # wget is needed for lighttpd's oracle
+    - autoconf
+    - pkg-config
+    - libtool
+    - libpcre2-dev
+    - libz-dev
+    - lib32z1-dev
+    - libpcre2-dev:i386
+  binaries:
+    - src/lighttpd
+  env:
+    CC: clang {ARCH_FLAGS}
+    CXX: clang++
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LDFLAGS: "{ARCH_FLAGS}"
+  init:
+    - ./autogen.sh
+  pre-build:
+    - ./configure
+  build:
+    - make
+
+medium/memcached-1.6.18:
+  source-dir: memcached
+  packages:
+    - autotools-dev
+    - automake
+    - libevent-dev
+    - libevent-dev:i386
+    - pkg-config
+  binaries:
+    - memcached
+  env:
+    CC: "clang {COMPILE_FLAGS} {LINK_FLAGS} -Wno-unused-command-line-argument {ARCH_FLAGS}"
+    CXX: "clang++ {COMPILE_FLAGS} {LINK_FLAGS} -Wno-unused-command-line-argument {ARCH_FLAGS}"
+  init:
+    # The below user and pip package is for mecached's oracle
+    - adduser --gecos "" --disabled-password memcached
+    - ./autogen.sh
+    - ./configure
+  pre-build: []
+  build:
+    - make
+
+medium/tcpdump-4.99.3:
+  source-dir: tcpdump
+  packages:
+    - libpcap-dev
+    - libpcap-dev:i386
+  binaries:
+    - tcpdump
+  <<: *configure-build
+
+low/bzip2-1.0.5:
+  source-dir: original
+  packages: []
+  env: {}
+  binaries:
+    - bzip2
+  pre-build: []
+  build:
+    - clang {COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS} bzip2.c blocksort.c huffman.c crctable.c randtable.c compress.c decompress.c bzlib.c -o bzip2
+
+.stdio-impl-fix: &stdio-impl-fix
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'    
+    CC: clang
+    CXX: clang++
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+  init:
+    - "/bin/bash -c \"echo '#undef __GNU_LIBRARY__' >> lib/stdio-impl.h\""
+    - "/bin/bash -c \"echo '#define __GNU_LIBRARY__ 1' >> lib/stdio-impl.h\""
+    - "/bin/bash -c \"echo '#define _IO_IN_BACKUP 0x100' >> lib/stdio-impl.h\""
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+  
+low/chown-8.2:
+  source-dir: original
+  packages: []
+  binaries:
+    - src/chown
+  <<: *stdio-impl-fix
+
+low/date-8.21:
+  source-dir: original
+  packages: []
+  binaries:
+    - src/date
+  <<: *stdio-impl-fix
+
+low/grep-2.19:
+  source-dir: original
+  packages:
+    - autoconf
+    - texinfo
+  binaries:
+    - src/grep
+  env:
+    FORCE_UNSAFE_CONFIGURE: '1'
+    CC: clang
+    CXX: clang++
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+  init:
+    - autoreconf
+  pre-build:
+    - ./configure
+  build:
+    - 'make'
+
+low/gzip-1.2.4:
+  source-dir: original
+  packages: []
+  binaries:
+    - gzip
+  env:
+    CC: clang
+    CXX: clang++
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+  pre-build:
+    - ./configure
+  build:
+    - make
+
+low/mkdir-5.2.1:
+  source-dir: original
+  packages:
+    - libcrypt-dev
+  binaries:
+    - src/mkdir
+  env:
+    CC: clang
+    CXX: clang++
+    CFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    CXXFLAGS: "{COMPILE_FLAGS} {LINK_FLAGS} {ARCH_FLAGS}"
+    LIBRARY_PATH: /usr/lib/i386-linux-gnu/
+  init:
+    - sed -i '127s/static int/int/' ./src/test.c
+    - sed -i '34s/tee/tee2/' ./src/tee.c
+    - sed -i '161s/tee/tee2/' ./src/tee.c
+    - sed -i '149s/tee/tee2/' ./src/tee.c
+  pre-build:
+    - './configure'
+  build:
+    - 'make'
+
+low/rm-8.4:
+  source-dir: original
+  packages: []
+  binaries:
+    - src/rm
+  <<: *stdio-impl-fix
+
+low/sort-8.16:
+  source-dir: original
+  packages: []
+  binaries:
+    - src/sort
+  <<: *stdio-impl-fix
+
+low/tar-1.14:
+  source-dir: original
+  packages:
+    - gettext
+  binaries:
+    - src/tar
+  <<: *configure-build
+
+low/uniq-8.16:
+  source-dir: original
+  packages: []
+  binaries:
+    - src/uniq
+  <<: *stdio-impl-fix

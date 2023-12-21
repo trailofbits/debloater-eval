@@ -1,0 +1,10 @@
+{
+  "binary": "wget_occam",
+  "native_libs": ["-lnettle", "-lz", "-lpcre2-8", "-lgnutls", "-lidn2", "-lpthread", "-lp11-kit", "-ltasn1", "-lhogweed", "-lgmp", "-lffi", "-ldl"],
+  "name": "wget",
+  "static_args": [""],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "wget.bc",
+  "dynamic_args": "1"
+}

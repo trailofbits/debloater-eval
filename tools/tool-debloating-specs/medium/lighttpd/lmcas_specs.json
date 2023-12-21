@@ -1,0 +1,17 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "lighttpd",
+        "-D",
+        "-f"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/"
+    }
+  ]
+}

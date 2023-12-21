@@ -1,0 +1,10 @@
+{
+ "binary": "grep_trimmer",
+ "native_libs": ["-lpcre"],
+ "name": "grep",
+ "args": ["-E", "free[^[:space:]]+", "_"],
+ "modules": [],
+ "ldflags": [""],
+ "main": "grep.bc",
+ "config_files": []
+} 

@@ -1,0 +1,10 @@
+{
+  "binary": "pdftohtml_occam",
+  "native_libs": ["/usr/lib/x86_64-linux-gnu/libpoppler.so.70", "-lfreetype", "-lz", "-lfontconfig", "-ljpeg", "-lcurl", "-lopenjp2", "-llcms2", "-lpng16", "-ltiff", "-lpthread"],
+  "name": "pdftohtml",
+  "static_args": [""],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "pdftohtml.bc",
+  "dynamic_args": "1"
+}

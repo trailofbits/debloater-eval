@@ -1,0 +1,70 @@
+assets:
+- '*'
+build:
+  command: make
+env:
+  CC: 'clang -O3 -fPIC -fPIE -pie '
+  CFLAGS: '-O3 -fPIC -fPIE '
+  CXX: 'clang++ -O3 -fPIC -fPIE -pie '
+  CXXFLAGS: '-O3 -fPIC -fPIE '
+  FORCE_UNSAFE_CONFIGURE: '1'
+  LDFLAGS: '-pie '
+oracle:
+  command: oracle.sh
+prepare:
+  command: ./configure
+sanitized_build:
+  command: make
+  env:
+    CC: 'clang -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int'
+    CXX: 'clang++ -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int'
+    FORCE_UNSAFE_CONFIGURE: '1'
+    LDFLAGS: '-pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+sanitized_prepare:
+  command: ./configure
+  env:
+    CC: 'clang -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int'
+    CXX: 'clang++ -O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int
+      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+      -Werror=return-type -Werror=implicit-int'
+    FORCE_UNSAFE_CONFIGURE: '1'
+    LDFLAGS: '-pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+sources:
+- '**/*.c'
+- '**/*.h'

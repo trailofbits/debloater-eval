@@ -1,0 +1,10 @@
+{
+  "binary": "magick_occam",
+  "native_libs": ["/usr/lib/x86_64-linux-gnu/libMagickCore-7.Q16HDRI.so.0", "/usr/lib/x86_64-linux-gnu/libMagickWand-7.Q16HDRI.so.0", "-lpthread", "-ljbig", "-lfreetype", "-ltiff", "-ljpeg", "-lfontconfig", "-llzma", "-lbz2", "-lgomp", "-ldl", "-lexpat", "-lz","-llcms2", "-llqr-1", "-lpng16", "-ldjvulibre", "-lwebp", "-lwmflite", "-lXext", "-lXt", "-llzma", "-lIlmImf", "-lImath", "-lHalf", "-lIex", "-lIexMath", "-lIlmThread", "-lxml2", "-lSM", "-lICE", "-lX11", "-lomp", "-lpcre"],
+  "name": "magick",
+  "static_args": ["-flip"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "magick.bc",
+  "dynamic_args": "2"
+}

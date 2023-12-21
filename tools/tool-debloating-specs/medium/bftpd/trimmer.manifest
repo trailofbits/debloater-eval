@@ -1,0 +1,10 @@
+{
+  "binary": "bftpd_trimmer",
+  "native_libs": ["-lcrypt"],
+  "name": "bftpd",
+  "args": ["-D",  "-c",  "bftpd-disabled-cmds-anon.conf"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "bftpd.bc",
+  "config_files": ["bftpd-disabled-cmds-anon.conf"]
+}

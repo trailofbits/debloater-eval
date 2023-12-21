@@ -1,0 +1,10 @@
+{
+  "binary": "gzip_trimmer",
+  "native_libs": [],
+  "name": "gzip",
+  "args": ["-c",  "-f"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "gzip.bc",
+  "config_files": []
+}

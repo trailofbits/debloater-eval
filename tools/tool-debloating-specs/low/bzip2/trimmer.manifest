@@ -1,0 +1,10 @@
+{
+ "binary": "bzip2_trimmer",
+ "native_libs": [],
+ "name": "bzip2",
+ "args": ["-c", "-f"],
+ "modules": [],
+ "ldflags": [""],
+ "main": "bzip2.bc",
+ "config_files": []
+} 

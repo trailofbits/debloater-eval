@@ -1,0 +1,137 @@
+{
+  "traces": [
+    {
+      "args": [],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr0"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "--help"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [],
+      "setup": [],
+      "teardown": [],
+      "name": "tr1"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "text-20-lines.txt"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines.txt",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr2"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": "-r"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./my_files/"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines.txt",
+          "destination": "./my_files/",
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines-too.txt",
+          "destination": "./my_files/",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr3"
+    },
+    {
+      "args": [
+        {
+          "arg_type": "concrete",
+          "value": " -r -f"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "./my_files/"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines.txt",
+          "destination": "./my_files/",
+          "permissions": true
+        },
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines-too.txt",
+          "destination": "./my_files/",
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr4"
+    },
+    {
+      "args": [
+      	{
+          "arg_type": "concrete",
+          "value": "-i"
+        },
+        {
+          "arg_type": "concrete",
+          "value": "text-20-lines.txt"
+        }
+      ],
+      "stdin": null,
+      "match_stdout": true,
+      "match_stderr": true,
+      "input_files": [
+        {
+          "source": "/home/binrec/binrec-benchmark/samples/coreutils/test_inputs/input_files/text-20-lines.txt",
+          "destination": null,
+          "permissions": true
+        }
+      ],
+      "setup": [],
+      "teardown": [],
+      "name": "tr5"
+    }
+  ],
+  "setup": [],
+  "teardown": []
+}

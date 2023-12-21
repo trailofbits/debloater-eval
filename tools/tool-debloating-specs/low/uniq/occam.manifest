@@ -1,0 +1,10 @@
+{
+  "binary": "uniq_occam",
+  "native_libs": [],
+  "name": "uniq",
+  "static_args": ["-i"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "uniq.bc",
+  "dynamic_args": "1"
+}

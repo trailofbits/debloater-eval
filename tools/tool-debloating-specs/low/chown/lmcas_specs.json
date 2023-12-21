@@ -1,0 +1,15 @@
+{
+    "binary": "{BINARY_PATH}",
+    "configs": [
+      {
+        "args": [
+          "chown"
+        ],
+        "env": {
+          "CWD": "/",
+          "PATH": "/bin"
+        },
+        "cwd": "/"
+      }
+    ]
+  }

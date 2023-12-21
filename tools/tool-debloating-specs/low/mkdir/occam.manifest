@@ -1,0 +1,10 @@
+{
+  "binary": "mkdir_occam",
+  "native_libs": [],
+  "name": "mkdir",
+  "static_args": ["-p"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "mkdir.bc",
+  "dynamic_args": "1"
+}

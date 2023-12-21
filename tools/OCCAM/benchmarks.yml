@@ -1,0 +1,141 @@
+high/imagemagick-7.0.1-0:
+  id: imagemagick
+  debloated-binary-name: magick_occam
+  binary-name: magick
+  complexity: high
+  libs:
+    libMagickCore-7.Q16HDRI.so.0.0.0: libMagickCore-7.Q16HDRI.so.0
+    libMagickWand-7.Q16HDRI.so.0.0.0: libMagickWand-7.Q16HDRI.so.0
+
+high/nginx-1.23.3:
+  id: nginx
+  debloated-binary-name: nginx_occam
+  binary-name: nginx
+  complexity: high
+  packages:
+    - libpcre2-dev
+    - wget
+
+high/nmap-7.93:
+  id: nmap
+  debloated-binary-name: nmap_occam
+  binary-name: nmap
+  complexity: high
+
+high/poppler-0.60:
+  id: poppler
+  perf-test-script: benchmark_aggressive_pdftohtml.sh
+  debloated-binary-name: pdftohtml_occam
+  binary-name: pdftohtml
+  complexity: high
+  libs:
+    libpoppler.so.70.0.0: libpoppler.so.70
+  packages:
+    - libopenjp2-7-dev
+
+medium/bftpd-6.1:
+  id: bftpd 
+  debloated-binary-name: bftpd_occam
+  binary-name: bftpd
+  complexity: medium
+  packages:
+    - lftp
+
+medium/lighttpd-1.4:
+  id: lighttpd 
+  debloated-binary-name: lighttpd_occam
+  binary-name: lighttpd
+  complexity: medium
+  packages:
+    - libpcre2-dev
+    - wget
+
+medium/make-4.2:
+  id: make 
+  debloated-binary-name: make_occam
+  binary-name: make
+  complexity: medium
+
+medium/memcached-1.6.18:
+  id: memcached 
+  debloated-binary-name: memcached_occam
+  binary-name: memcached
+  complexity: medium
+  perf-test-run-as-root: False
+  pip-modules:
+    - python-memcached
+
+medium/binutils-2.40:
+  id: objdump 
+  debloated-binary-name: objdump_occam
+  binary-name: objdump
+  complexity: medium
+
+medium/wget-1.20.3:
+  id: wget 
+  debloated-binary-name: wget_occam
+  binary-name: wget
+  complexity: medium
+  packages:
+    - gnutls-dev
+    - libpcre2-dev
+
+low/bzip2-1.0.5:
+  id: bzip2 
+  debloated-binary-name: bzip2_occam
+  binary-name: bzip2
+  complexity: low
+
+low/chown-8.2:
+  id: chown 
+  debloated-binary-name: chown_occam
+  binary-name: chown
+  complexity: low
+
+low/date-8.21:
+  id: date 
+  debloated-binary-name: date_occam
+  binary-name: date
+  complexity: low
+
+low/grep-2.19:
+  id: grep 
+  debloated-binary-name: grep_occam
+  binary-name: grep
+  complexity: low
+
+low/gzip-1.2.4:
+  id: gzip 
+  debloated-binary-name: gzip_occam
+  binary-name: gzip
+  complexity: low
+
+low/mkdir-5.2.1:
+  id: mkdir 
+  debloated-binary-name: mkdir_occam
+  binary-name: mkdir
+  complexity: low
+
+low/rm-8.4:
+  id: rm 
+  debloated-binary-name: rm_occam
+  binary-name: rm
+  complexity: low
+
+low/sort-8.16:
+  id: sort 
+  debloated-binary-name: sort_occam
+  binary-name: sort
+  complexity: low
+
+low/tar-1.14:
+  id: tar 
+  debloated-binary-name: tar_occam
+  binary-name: tar
+  complexity: low
+
+low/uniq-8.16:
+  id: uniq 
+  debloated-binary-name: uniq_occam
+  binary-name: uniq
+  complexity: low

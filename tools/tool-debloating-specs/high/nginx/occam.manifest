@@ -1,0 +1,10 @@
+{
+  "binary": "nginx_occam",
+  "native_libs": ["-ldl", "-lz", "-lpcre2-8", "-lcrypt", "-lpthread"],
+  "name": "nginx",
+  "static_args": ["-c", "nginx-file_server.conf", "-p"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "nginx.bc",
+  "dynamic_args": "1"
+}

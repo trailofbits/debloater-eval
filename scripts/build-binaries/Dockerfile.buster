@@ -1,0 +1,10 @@
+FROM debian:buster
+
+RUN apt-get update && apt-get install -y software-properties-common wget gnupg time build-essential
+
+RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
+RUN apt-add-repository "deb http://apt.llvm.org/buster/ llvm-toolchain-buster-10 main" && apt-get update
+RUN apt-get install -y clang-10 clang++-10
+RUN ln -s /usr/bin/clang-10 /usr/bin/clang
+RUN ln -s /usr/bin/clang++-10 /usr/bin/clang++
+

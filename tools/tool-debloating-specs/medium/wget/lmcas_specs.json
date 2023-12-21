@@ -1,0 +1,20 @@
+{
+  "binary": "{BINARY_PATH}",
+  "configs": [
+    {
+      "args": [
+        "wget"
+      ],
+      "env": {
+        "CWD": "/",
+        "PATH": "/bin"
+      },
+      "cwd": "/",
+      "syscall_mocks": {
+        "sys_getuid": {
+          "uid": 1000
+        }
+      }
+    }
+  ]
+}

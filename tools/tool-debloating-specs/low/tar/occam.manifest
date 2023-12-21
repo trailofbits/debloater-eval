@@ -1,0 +1,10 @@
+{
+  "binary": "tar_occam",
+  "native_libs": [],
+  "name": "tar",
+  "static_args": ["-xf"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "tar.bc",
+  "dynamic_args": "1"
+}

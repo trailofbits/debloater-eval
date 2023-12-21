@@ -1,0 +1,10 @@
+{
+ "binary": "grep_occam",
+ "native_libs": ["-lpcre", "-lpthread"],
+ "name": "grep",
+ "static_args": ["-E", "free[^[:space:]]+"],
+ "modules": [],
+ "ldflags": ["-O3"],
+ "main": "grep.bc",
+ "dynamic_args": "1"
+} 

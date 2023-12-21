@@ -1,0 +1,53 @@
+assets:
+- '*'
+build:
+  command: make
+env:
+  CC: clang
+  CFLAGS: '-O3 -fPIC -fPIE -pie '
+  CXX: clang++
+  CXXFLAGS: '-O3 -fPIC -fPIE -pie '
+  FORCE_UNSAFE_CONFIGURE: '1'
+oracle:
+  command: oracle.sh
+prepare:
+  command: ./configure
+#sanitized_build:
+#  command: make
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    FORCE_UNSAFE_CONFIGURE: '1'
+#sanitized_prepare:
+#  command: ./configure
+#  env:
+#    CC: clang
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    FORCE_UNSAFE_CONFIGURE: '1'
+sources:
+- '**/*.c'
+- '**/*.h'

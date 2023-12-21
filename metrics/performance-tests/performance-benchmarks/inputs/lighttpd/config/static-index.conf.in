@@ -1,0 +1,10 @@
+server.document-root = "{{workdir}}/serve"
+
+server.port = 3002
+
+mimetype.assign = (
+  ".html" => "text/html",
+  ".php" => "application/x-httpd-php"
+)
+
+index-file.names = ( "about.html" )

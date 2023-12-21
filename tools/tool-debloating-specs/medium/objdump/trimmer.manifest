@@ -1,0 +1,10 @@
+{
+  "binary": "objdump_trimmer",
+  "native_libs": ["-ldl"],
+  "name": "objdump",
+  "args": ["-x",  "_"],
+  "modules": [],
+  "ldflags": [""],
+  "main": "objdump.bc",
+  "config_files": []
+}

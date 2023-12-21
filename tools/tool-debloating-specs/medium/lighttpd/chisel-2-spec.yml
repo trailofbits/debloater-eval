@@ -1,0 +1,54 @@
+assets:
+- '*'
+build:
+  command: make
+env:
+  CC: 'clang '
+  CFLAGS: '-O3 -fPIC -fPIE -pie '
+  CXX: clang++
+  CXXFLAGS: '-O3 -fPIC -fPIE -pie '
+  LDFLAGS: ''
+oracle:
+  command: ' /bin/bash -c "source /chisel_env/bin/activate && python3 /host/tool-debloating-specs/chisel_oracle.py  --port_start
+    30000 --processes 8 ./src/lighttpd medium.lighttpd.oracle_lighttpd"'
+prepare:
+  command: ./configure
+#sanitized_build:
+#  command: make
+#  env:
+#    CC: 'clang '
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    LDFLAGS: ''
+#sanitized_prepare:
+#  command: ./configure
+#  env:
+#    CC: 'clang '
+#    CFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    CXX: clang++
+#    CXXFLAGS: '-O3 -fPIC -fPIE -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong
+#      -Wfatal-errors -Werror=return-type -Werror=uninitialized -Werror=maybe-uninitialized
+#      -Werror=return-type -Werror=implicit-int -Werror=implicit-function-declaration
+#      -pie -fsanitize=address -fsanitize=pointer-compare -fsanitize=pointer-subtract
+#      -fsanitize=undefined -fno-sanitize-recover=undefined -fstack-protector-strong '
+#    LDFLAGS: ''
+sources:
+- '**/*.c'
+- '**/*.h'

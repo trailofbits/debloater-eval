@@ -1,0 +1,9 @@
+{
+  "binary": "make_occam",
+  "native_libs": ["-ldl"],
+  "name": "make",
+  "static_args": ["install"],
+  "modules": [],
+  "ldflags": ["-O3"],
+  "main": "make.bc"
+}
