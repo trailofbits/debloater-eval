@@ -8,7 +8,7 @@ reference at the link below. We welcome others to extend/re-use this dataset
 and hope you find it useful in your research / security work. If you use this 
 tool in your research, please cite the following paper:
 
-**Brown, Michael D., et al. "SoK: A Broad Comparative Evaluation of Software Debloating Tools". arXiv CS.SE. 2023.**[\[pdf\]](https://arxiv.org/abs/2312.13274)
+**Brown, Michael D., et al. "A Broad Comparative Evaluation of Software Debloating Tools". arXiv CS.SE. 2023.**[\[pdf\]](https://arxiv.org/abs/2312.13274)
 
 ## Repository Strucutre
 
